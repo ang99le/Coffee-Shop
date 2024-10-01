@@ -2,7 +2,13 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import cardList from "../Cards";
 import Cards from "../components/Cards";
+import Search from "../components/Search";
+import { useState } from "react";
+
 export default function Home (){
+const [search,setSearch]=useState("");
+const filteredCards = cardList.filter((card) => card.title.toLowerCase().includes(search.toLocaleLowerCase())
+     )
     return(
         <div>
             <nav>
@@ -37,9 +43,14 @@ export default function Home (){
                 </div>
 
                 </section>
-             <section className="flex flex-wrap gap-5 justify-center mt-5">
-             {cardList.map((card, index) => (
-             <Cards key={index} title={card.title} description={card.description} image={card.image} price={card.price}/>
+
+<section>
+    <Search search={search} setSearch={setSearch} />
+</section>
+
+ <section className="flex flex-wrap gap-5 justify-center mt-5">
+ {filteredCards.map((card, index) => (
+<Cards key={index} title={card.title} description={card.description} image={card.image} price={card.price}/>
       ))}
              </section>
 
