@@ -13,12 +13,12 @@ navigate(`/DetailsPage`,{state:{card:props}})
   return (
     <div onClick={handleOnClick}>
     
-        <div className='absolute bg-[#6F3F1D] opacity-20 w-[355px] p-3 rounded-3xl h-[440px]'></div>
-        <div className=' w-[355px] p-3 rounded-3xl h-[440px] z-50'>
+        <div className='absolute bg-[#6F3F1D] opacity-20 w-[355px] p-3 rounded-3xl h-[420px]'></div>
+        <div className=' w-[355px] p-3 rounded-3xl h-[420px] z-50'>
        <img className='h-[200px] rounded-3xl object-cover w-full' src={props.image} alt='coffee type'/>
         <h2 className='font-bold ml-3 text-2xl text-start mt-2 text-[#6F3F1D] break-words w-[150px]'> {props.title}</h2>
         <p className='text-start ml-3 text-justify text-[#6F3F1D]'>{props.description}</p>
-      <div className='flex gap-28 '>
+      <div className='flex gap-28 mt-2'>
       <p className='font-bold text-2xl ml-3 text-start mt-2 text-[#6F3F1D]'>{props.price}</p>
      
       <div className='flex gap-2 ml-6 z-50 mt-2'>

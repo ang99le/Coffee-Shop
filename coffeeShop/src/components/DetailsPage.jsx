@@ -22,7 +22,7 @@ const {card} =location.state;
     <h1 className='text-start text-6xl text-[#6F3F1D] font-bold break-words w-[350px]'>{card.title}</h1>
     <p className=' text-start text-justify text-[#6F3F1D] mt-7 word-break w-[270px]'>{card.description}</p>
     
-    <div className='flex mt-20 gap-28'>
+    <div className='flex mt-14 gap-28'>
     <h1 className='text-[#D65A00] text-3xl font-bold'>{card.price}</h1>
     <button className='bg-[#D65A00] p-2 rounded-3xl text-white w-[90px] h-[40px] hover:bg-[#8E3C00]'>download</button>
 
