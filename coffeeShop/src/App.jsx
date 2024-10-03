@@ -3,6 +3,7 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Favorite from "./pages/Fav";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
+import Navbar from './components/Navbar';
 import { lazy, Suspense } from 'react';
 import Loader from './components/Loader';
 const Home =lazy(()=>import("./pages/Home"))
@@ -21,6 +22,7 @@ function App() {
       <Route path='/Favorite' element={<Favorite/>}></Route>
       <Route path='/Blog' element={<Blog/>}></Route>
       <Route path='/About' element={<About/>}></Route>
+      <Route path='/Navbar' element={<Navbar/>}></Route>
       <Route path='/DetailsPage' element={<DetailsPage/>}></Route>
       <Route path='/Loader' element={<Loader/>}></Route>
     </Routes>

@@ -13,10 +13,10 @@ export default function Navbar (){
 
             </div>
             <ul className="flex gap-8 text-[#6F3F1D] font-bold">
-                <li className="hover:underline "><Link to={`Home`}> Store</Link></li>
-                <li  className="hover:underline "><Link to={`Favorite`}>Favorite</Link></li>
-                <li  className="hover:underline "><Link to={`Blog`}> Blog</Link></li>
-                <li  className="hover:underline "><Link to={`About`}>About</Link></li>
+                <li className="hover:underline "><Link to="/Home"> Store</Link></li>
+                <li  className="hover:underline "><Link to="/Favorite">Favorite</Link></li>
+                <li  className="hover:underline "><Link to="/Blog"> Blog</Link></li>
+                <li  className="hover:underline "><Link to="/About">About</Link></li>
             </ul>
         </div>
     )
