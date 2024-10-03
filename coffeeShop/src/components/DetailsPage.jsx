@@ -3,6 +3,8 @@ import Navbar from './Navbar'
 import { useLocation } from 'react-router-dom'
 import cardsList from '../Cards';
 import Cards from './Cards';
+import coffeebeans from '../assets/coffeebeans.webp';
+
 
 export default function DetailsPage() {
 const location=useLocation();
@@ -27,17 +29,20 @@ const {card} =location.state;
     <button className='bg-[#D65A00] p-2 rounded-3xl text-white w-[90px] h-[40px] hover:bg-[#8E3C00]'>download</button>
 
     </div>
-  
+    <img src={coffeebeans} className='-mt-80 ml-64 w-[550px] h-[580px] absolute z-20 animate-move-vertical' alt='wondering-cat'/>
+
     </div>
 
+
 </div>
+
 </section>
 
 
 
 <section className='ml-24 mt-24'>
 <h1 className='text-[#6F3F1D] text-6xl font-bold break-words w-[250px] text-start mt-12'>You May Like</h1>
-<div className='flex gap-5 mt-5'>
+<div className='flex gap-5 mt-5 '>
 {cardsList.slice(0,3).map((MayLike,index)=>(
     <Cards key={index} title={MayLike.title} description={MayLike.description} image={MayLike.image} price={MayLike.price} />
 ))}
