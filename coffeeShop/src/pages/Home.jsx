@@ -37,8 +37,8 @@ const filteredCards = cardList.filter((card) => card.title.toLowerCase().include
                 <p className="p-5 lg:p-14 space-y-6 md:text-4xl translate-y-0 pb-16 font-medium md:break-word">Your Everyday <span className="block text-start mt-1"> Coffee</span></p>
                 <div className="absolute bottom-14 right-10 md:right-8  md:bottom-16 bg-white md:bg-w-[60px] rounded-full" >
                 <svg width="50" height="50"  viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14.5833 35.4167L35.4166 14.5833" stroke="#6F3F1D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M14.5833 14.5833H35.4166V35.4167" stroke="#6F3F1D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.5833 35.4167L35.4166 14.5833" stroke="#6F3F1D" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14.5833 14.5833H35.4166V35.4167" stroke="#6F3F1D" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 
 </div>    
